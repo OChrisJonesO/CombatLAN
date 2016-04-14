@@ -149,8 +149,33 @@ title: CombatLAN / Home
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="text-center">Featured CombatLAN Sponsor</h1><img class="img-responsive" src="assets/img/hyperx.png"></div>
+        </div>
+        <!--Load Newsletter Subscription Modal-->
+        <script>
+            setTimeout('loadNewsletterSubscribe();', 10000);
+
+            function loadNewsletterSubscribe(){
+                $('#newsletter-subscribe').modal('show');
+            }
+        </script>
+        <!--Start Email Subscribe Modal-->
+        <div class="modal fade" role="dialog" tabindex="-1" id="newsletter-subscribe">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title">Receive LAN party notifications straight to your inbox</h4></div>
+                    <div class="modal-body">
+                        <form>
+                            <p class="text-center">We'll send you a reminder email when new LAN parties are announced, tickets go on sale, or when we're having a community night on one of our dedicated game servers. </p>
+                            <div class="input-group">
+                                <input class="form-control" type="email" placeholder="Your email address..." autocomplete="on">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit" id="subscribe">Subscribe </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>

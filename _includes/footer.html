@@ -1,3 +1,5 @@
+
+<!--End Cookies Modal-->    
 <footer class="div-color">
     <div class="container">
         <div class="row">
@@ -98,22 +100,30 @@
                 </div>
             </div>
         </div>
-        <!--End Cookies Modal-->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/js/flipclock.js"></script>
-          <!--Flipclock-->
-            <script type="text/javascript">
-                // Grab the current date
-                var currentDate = new Date();
+    </div>
+    <!--End Cookies Modal-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/flipclock.js"></script>
+    <!--Flipclock-->
+    <script type="text/javascript">
+        // Grab the current date
+        var currentDate = new Date();
 
-                // Set some date in the future. In this case, it's always Jan 1
-                var futureDate  = new Date(2016, 3, 30);
+        // Set some date in the future. In this case, it's always Jan 1
+        var futureDate  = new Date(2016, 3, 30);
 
-                // Calculate the difference in seconds between the future and current date
-                var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
-                var clock = $('.clock').FlipClock(diff, {
-                    clockFace: 'DailyCounter',
-                    countdown: true
-                });
-            </script>
+        // Calculate the difference in seconds between the future and current date
+        var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+        var clock = $('.clock').FlipClock(diff, {
+            clockFace: 'DailyCounter',
+            countdown: true
+        });
+    </script>
+    <!--Random Sponsor-->
+    <script>
+        $(function(){
+            $("#sponsor"+(new Date().getTime() % 8 +1)).css("display", "block");
+        });
+    </script>
+    

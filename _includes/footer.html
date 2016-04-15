@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="text-center">Copyright 2016 © CombatLAN</h3></div>
+                <h3 id="copyright" class="text-center">Copyright 2016 © CombatLAN</h3></div>
         </div>
         <div class="row">
             <div class="col-md-12" style="text-align:center; margin-top:25px; margin-bottom:25px;">
@@ -153,6 +153,21 @@
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/lightbox.js"></script>
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/smoothscroll.js"></script>
+    <script>$(function() {
+    $(".smoothScroll").click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});</script>
     <script src="/assets/js/flipclock.js"></script>
     <!--Flipclock-->
     <script>
@@ -175,3 +190,4 @@
             $("#sponsor"+(new Date().getTime() % 8 +1)).css("display", "block");
         });
     </script>
+    <script id="dsq-count-scr" src="//combatlan.disqus.com/count.js" async></script>

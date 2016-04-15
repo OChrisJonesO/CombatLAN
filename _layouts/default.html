@@ -4,12 +4,13 @@
   <body>
     {% include header.html %}
     {% include breadcrumbs.html %}
-          {{ content }}
-        </div>
-        {% include sidebar.html %}
-      </div>
+    {{ content }}
+    {% include disqus.html %}
     </div>
-    {% include featured-sponsor.html %}
-    {% include footer.html %}
-  </body>
+  {% include sidebar.html %}
+  </div>
+</div>
+{% include featured-sponsor.html %}
+{% include footer.html %}
+</body>
 </html>

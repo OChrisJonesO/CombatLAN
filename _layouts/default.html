@@ -3,8 +3,12 @@
   {% include head.html %}
   <body>
     {% include header.html %}
-        {{ content }}
-    {% include sidebar.html %}
+    {% include breadcrumbs.html %}
+          {{ content }}
+        </div>
+        {% include sidebar.html %}
+      </div>
+    </div>
     {% include featured-sponsor.html %}
     {% include footer.html %}
   </body>

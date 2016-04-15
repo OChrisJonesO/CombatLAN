@@ -1,181 +1,41 @@
 ---
-layout: default
-date:   2016-04-13 04:19:46 -0500
-title: CombatLAN / Home
+layout: index
+title: CombatLAN | Home
+page-name: Home
 ---
-<div id="landing">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12"><img src="assets/img/brand2.svg" id="brand2"></div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="responsive-iframe">
+            <iframe id="youtube-video" src="https://www.youtube.com/embed/RGXF8FQ_KNU" allowfullscreen></iframe>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div id="flipclock-wrapper" style="color:white; width:default; text-align:center; ">
-                    <div class="clock"  style="display: inline-block;"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h1>April 30 - May 1, 2016</h1></div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <a href="tickets.html"> <button class="btn btn-default" type="button">Buy Tickets
-                    </button></a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <a href="#container"><img src="assets/img/down-arrow.svg" width="75" id="down-arrow"></a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12"></div>
-        </div>
+        <h1>CombatLAN v4.0 Trailer</h1>
+        <hr>
     </div>
 </div>
-<div class="container" id="container" style="margin-top:25px;">
-    <div class="row">
-        <div class="col-md-9">
-            <div class="row">
-                <div class="col-md-12">
-                    <ol class="breadcrumb">
-                        <li><a><span>CombatLAN </span></a></li>
-                        <li><a><span>Home </span></a></li>
-                    </ol>
-                </div>
+<div class="row">
+    <div class="col-md-12">
+        <h1>"CombatLAN is an ode to the roots of PC Gaming. And it's fantastic"</h1>
+        <h4>&mdash; Darrin Broering</h1>
+        <p>CombatLAN is a PC gaming-focused community in the southeast Ohio region. We regularly play games together on our self hosted community servers, and host multiple LAN parties throughout the year. Anyone is welcome to join the official Discord chat, community forums, or to join us in game. Additionally, we welcome all to participate in our LAN party events.</p>
+        <p>With the rise of online gaming, LAN parties have consistently decreast in pouplarity. We're here to change that.</p>
+        <hr>
+    </div>
+</div>
+{% for post in site.posts limit:3%}
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-sm-4">
+                {{post.thumbnail}}
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <iframe src="https://player.twitch.tv/?channel=combatlan" frameborder="0" scrolling="no" height="450px" width="100%"></iframe><a href="http://www.twitch.tv/combatlan?tt_medium=live_embed&tt_content=text_link" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px;text-decoration:underline;"></a>
-                    <h1>CombatLAN v4.0 Trailer</h1>
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Get ready to frag like it's 1999</h1>
-                    <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko.
-                        Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress.
-                        Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. </p>
-                    <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko.
-                        Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress.
-                        Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. </p>
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="page-header">
-                        <h1>Blog Post 5<small> April 10, 2016</small></h1>
-                        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. </p>
-                        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini. </p>
-                        <div><a class="btn btn-default" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-1" role="button" href="#collapse-1">View Full Blog Post</a>
-                            <div class="collapse" id="collapse-1">
-                                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach
-                                    carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi
-                                    beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. </p>
-                                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach
-                                    carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi
-                                    beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. </p>
-                                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach
-                                    carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi
-                                    beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. </p>
-                                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach
-                                    carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi
-                                    beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. </p>
-                                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach
-                                    carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi
-                                    beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="page-header">
-                        <h1>Blog Post 4<small> April 10, 2016</small></h1>
-                        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. </p>
-                        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini. </p>
-                        <div><a class="btn btn-default" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-2" role="button" href="#collapse-2">View Full Blog Post</a>
-                            <div class="collapse" id="collapse-2">
-                                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach
-                                    carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi
-                                    beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. </p>
-                                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach
-                                    carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi
-                                    beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. </p>
-                                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach
-                                    carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi
-                                    beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. </p>
-                                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach
-                                    carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi
-                                    beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. </p>
-                                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach
-                                    carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi
-                                    beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="page-header">
-                        <h1>Blog Post 3<small> April 10, 2016</small></h1>
-                        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. </p>
-                        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini. </p>
-                        <div><a class="btn btn-default" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-3" role="button" href="#collapse-3">View Full Blog Post</a>
-                            <div class="collapse" id="collapse-3">
-                                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach
-                                    carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi
-                                    beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. </p>
-                                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach
-                                    carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi
-                                    beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. </p>
-                                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach
-                                    carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi
-                                    beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. </p>
-                                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach
-                                    carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi
-                                    beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. </p>
-                                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach
-                                    carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi
-                                    beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-sm-8">
+                <h2 class="small-heading-center"><a href="{{ post.url }}" class="post-titles">{{ post.title }}</a></h2>
+                <h4 class="small-heading-center">{{ page.date | date: '%B %d, %Y' }}</h4>
+                {{ post.excerpt }}
+                <a class="btn btn-default fluid-text" href="{{ post.url }}">View Full Post</a>
             </div>
         </div>
-        <!--Load Newsletter Subscription Modal-->
-        <script>
-            setTimeout('loadNewsletterSubscribe();', 10000);
-
-            function loadNewsletterSubscribe(){
-                $('#newsletter-subscribe').modal('show');
-            }
-        </script>
-        <!--Start Email Subscribe Modal-->
-        <div class="modal fade" role="dialog" tabindex="-1" id="newsletter-subscribe">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                        <h4 class="modal-title">Receive LAN party notifications straight to your inbox</h4></div>
-                    <div class="modal-body">
-                        <form>
-                            <p class="text-center">We'll send you a reminder email when new LAN parties are announced, tickets go on sale, or when we're having a community night on one of our dedicated game servers. </p>
-                            <div class="input-group">
-                                <input class="form-control" type="email" placeholder="Your email address..." autocomplete="on">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-default" type="submit" id="subscribe">Subscribe </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <hr>
+    </div>
+</div>
+{% endfor %}
